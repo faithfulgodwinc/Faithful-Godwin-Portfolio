@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+body{
+    background-color: #000;
+    scroll-behavior: smooth;
+}
+header{
+    background: #000;
+    font-family: "Urbanist", sans-serif;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+header nav{
+    position: fixed;
+    z-index: 1;
+    background-color: #111;
+    border-radius: 12px;
+    padding: 1%;
+    box-shadow: 0 1px 2px #3640434d,0 1px 3px 1px #36404326;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2rem;
+}
+header nav ul li {
+    column-gap: 2rem;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Urbanist", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 300;
+}
+header a {
+    text-decoration: none;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+}
+.front{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2rem;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 5%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    box-shadow: 0 1px 2px #3640434d,0 1px 3px 1px #36404326;
+}
+
+.text{
+    background-color: #0e0e0e;
+    color: #fff;
+    text-align: left;
+    font-style: normal;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    flex-basis: 60%;
+    box-shadow: 0 1px 2px #3640434d,0 1px 3px 1px #36404326;
+}
+.text_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text_top .intro{
+    font-size: 12px;
+}
+.text_top .intro h3{
+    font-family: "Boogaloo", sans-serif;
+    font-size: 15px;
+}
+.text_top .intro h5{
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 300;
+    color: #d3cece;
+    margin-top: 0.3rem;
+    font-size: 15px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+.text_top .user_icon{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+}
+.text_top .user_icon img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.text_top .social{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1rem;
+}
+.text_top .social a{
+    color: #fff;
+}
+.text_top .social a i{
+    font-size: 24px;
+}
+.text_mid{
+    font-size: 24px;
+    margin-top: 1rem;
+}
+.text_mid h1{
+    font-family: "Urbanist", sans-serif;
+}
+.text_mid p{
+    margin-top: 0.7rem;
+    font-size: 20px;
+    color: #d3cece;
+    font-family: "Advent Pro", sans-serif;
+}
+.text_mid p span{
+    font-style: bolder;
+    color: #fff;
+    font-family: "Urbanist", sans-serif;
+    font-size: 24px;
+    font-weight: 1200;
+}
+.front .pic {
+    width: 300px;
+    height: 315px;
+    overflow: hidden;
+    flex-basis: 30%;
+    border-radius: 15px;
+    background-color: #0e0e0e;
+}
+.front .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* tools section */
+.tools{
+    width: 100%;
+    margin-top: 10rem;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transform: rotate(-3deg);
+}
+.tools i {
+    color: #2b2828;
+    font-size: 64px;
+}
+/*Project section*/
+.projects{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    transform: rotate(-3deg);
+}
+.pro{
+    display: flex;
+    z-index: 0;
+    height: 400px;
+    width: 100%;
+    background-color: #111;
+    border-radius: 2rem;
+    margin-top: 10rem;
+    box-shadow: 0 1px 2px #3640434d,0 1px 3px 1px #36404326;
+}
+.pro img{
+    flex-basis: 50%;
+}
+.pro_info{
+    color: #fff;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 1%;
+    text-align: left;
+    align-content: center;
+}
+.pro_info h1{
+    font-family: "Urbanist", sans-serif;
+    font-size: 52px;
+}
+.pro_info h3{
+    font-family: "Urbanist", sans-serif;
+    font-size: 32px;
+}
+.pro_info p{
+    font-family: "Urbanist", sans-serif;
+    color: #d3cece;
+    font-size: 18px;
+}
+.pro_info i {
+    padding-top: 1rem;
+    font-size: 52px;
+    margin-right: 1rem;
+}
+/*about*/
+.about{
+    margin: 10rem auto;
+    width: 100%;
+    padding: 5%;
+}
+.about .abt_intro{
+    text-align: center;
+    color: #fff;
+}
+.abt_intro h1{
+    font-family: "Urbanist", sans-serif;
+    font-size: 64px;
+}
+.abt_me{
+    justify-content: center;
+    color: #d3cece;
+    margin: 2rem auto;
+    display: block;
+}
+.abt_me iframe{
+    display: flex;
+    justify-content: center;
+    margin: 10% auto;
+    text-align: center;
+    box-shadow: 0 1px 2px #3640434d,0 1px 3px 1px #36404326;
+}
+.abt_me p{
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: "Advent Pro", sans-serif;
+    font-size: 25px;
+}
+/*skills */
+.skill_set{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10rem;
+    column-gap: 1.5rem;
+}
+.skill{
+    padding: 2%;
+    margin: 2rem;
+    background-color: #111;
+    color: #fff;
+    width: 30%;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 1px 2px #3640434d,0 1px 3px 1px #36404326;
+}
+.skill i{
+    font-size: 80px;
+    margin-bottom: 2rem;
+}
+.skill_intro{
+    text-align: center;
+    color: #fff;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+.skill_intro h1{
+    font-family: "Urbanist", sans-serif;
+    font-size: 64px;
+}
+.skill_info h1{
+    font-family: "Urbanist", sans-serif;
+    color: #d3cece;
+}
+
+/* Resume */
+.resume{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.resume h1{
+    font-family: "Urbanist", sans-serif;
+    font-size: 64px;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+.resume a{
+    outline: none;
+    text-decoration: none;
+}
+.resume button{
+    margin-top: 2rem;
+    padding: 1%;
+    font-size: 16px;
+    background-color: #000;
+    outline: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 900;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #2b2828;
+    text-align: cnter;
+    color: #fff;
+    padding: 5%;
+}
+footer .social{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+footer .social a{
+    color: #fff;
+    font-size: 15px;
+}
+footer .social a i{
+    font-size: 24px;
+}
+footer .copyright{
+    text-align: center;
+}
